@@ -1,0 +1,1647 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-size: 62.5%;
+    line-height: 2;
+}
+
+p,h1,h2,h3,h4,h5,h6{
+    margin-top: 0;
+}
+
+img{
+    vertical-align: bottom;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+}
+
+#top .view-list a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#top .view-list2 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#about03 .about03link a{
+    color: #3ce1da;
+    text-decoration: none;
+}
+
+.link-list a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+a:hover{
+    text-decoration: underline;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+
+/*indexに影響するものの解除*/
+#index #warp{
+    background-color: transparent;
+    margin-top: 0;
+    padding: 0;
+}
+
+/*header*/
+
+header {
+    width: auto;
+    height: auto;
+/*    margin: 0 5%;*/
+    border-top: solid 20px #000000;
+}
+
+/*header要素*/
+ 
+.logo{
+    float: left;
+    margin-top: 50px;
+}
+
+ul.global-nav{
+    float: right;
+    margin-top: 0%;
+    margin-right: 15%;
+    font-family: 'Staatliches', sans-serif;
+}
+
+ul.global-nav li{
+    float: left;
+    margin: 0 20px;
+    font-size: 3rem;
+    list-style: none;
+}
+
+ul.global-nav li a:hover{
+    border-bottom: 2px solid #000000;
+    padding-bottom: 3px;
+   text-decoration: none;
+}
+
+ul.global-nav ul {
+   display: none;         /* ★5:非表示にする */
+    margin: 0px;         /* ★2:サブメニュー外側の余白(ゼロ) */
+   padding: 0px;        /* ★3:サブメニュー内側の余白(ゼロ) */
+   position: absolute;  /* ★4:絶対配置にする */
+}
+
+/* ---------------------------------- */
+/* ▼サブメニューがある場合に開く処理 */   /* ※サブメニューが1階層しか存在しない場合の記述 */
+/* ---------------------------------- */
+ul.global-nav li:hover ul {
+   display: block;      /* ★5:マウスポインタが載っている項目の内部にあるリストを表示する */
+}
+
+/* ------------------------ */
+/* ▼サブメニュー項目の装飾 */
+/* ------------------------ */
+ul.global-nav ul li {   /* ※A */
+   width: 50%;               /* サブメニュー1項目の横幅(50%) */
+   border-top: 2px solid #000; /* 項目上側の枠線(black色で2pxの実線) */
+    background-color: #fff;
+}
+ul.global-nav ul li a {   /* ※B */
+   line-height: 10%;   /* サブメニュー1項目の高さ(35px) */
+   text-align: left;    /* 文字列の配置(左寄せ) */
+   padding-left: 5px;   /* 文字列前方の余白(5px) */
+   font-weight: normal; /* 太字にはしない */
+    font-size: 1.2rem;
+}
+ul.global-nav ul li a:hover {   /* ※C */
+   background-color: #3ce1da; /* サブメニュー項目にマウスが載ったときの背景色(淡い黄色) */
+   color: #000;            /* サブメニュー項目にマウスが載ったときの文字色(濃い緑色) */
+    border-bottom: none;
+}
+
+ul.global-nav ul li .header-link a{
+    font-size: 3rem;
+}
+
+
+.header-link a{
+    background-color: #000000;
+    color: #ffffff;
+    display: block;
+    width: 10rem;
+    padding-left: 0.5rem;
+    border-bottom: 2px solid #000000;
+    border-top-style: none;
+    margin-bottom: 0;
+     font-size: 3rem;
+}
+
+.header-link a:hover{
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+}
+
+.global-nav a:hover{
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+
+#warp{
+    clear: both;
+    background-color: #ffffff;
+    padding: 35px 0;
+}
+
+.content{
+    width: auto;
+    margin: 0 auto;
+}
+
+.about-link p{
+    font-family: 'Staatliches', sans-serif; 
+     font-size: 6rem;
+     border-bottom: solid 5px #000000;
+     display: inline-block;
+     padding-bottom: 0px;
+}
+
+.link-list li{
+    list-style: none;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1.5rem;
+    display: block;
+    width: 30%;
+    height: 5rem;
+    text-align: justify;
+    line-height: 5rem;
+    margin-right: 2%;
+    float: left;
+}
+
+.link-img{
+    vertical-align: middle;
+    width: 14%;
+}
+
+.about-img{
+    text-align: center;
+}
+
+.text-narrow{
+     transform: scale(0.5, 1);
+    transform-origin: top left;
+    }
+
+
+/*footer*/
+footer{
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000000;
+    height: 10rem;
+}
+
+.footerimg{
+    width: 100%;
+}
+
+footer .footer-logo{
+    text-align: center;
+}
+
+footer small{
+    font-size: 1rem;
+}
+
+.footer-nav a{
+    width: 50%;
+    color: #ffffff;
+    float: left;
+    margin-top: 0%;
+    margin-right: 8%;
+    font-family: 'Staatliches', sans-serif;
+}
+
+.footer-nav li{
+    float: left;
+    margin: 0 2%;
+    font-size: 2rem;
+    list-style: none;
+}
+
+.footer-nav li a:hover{
+    color: #6EE1D2;
+    text-decoration: none;
+}
+
+footer .rotate{
+    font-size: 1.5rem;
+    color: #ffffff;
+    float: right;
+    transform: rotate(90deg) translateX(20px) translateY(30px);
+    font-family: 'Staatliches', sans-serif; 
+}
+
+h1{
+    font-family: 'Staatliches', sans-serif;
+    font-size: 3rem;
+    
+
+    
+/*border
+    border-top: solid 4px #000000;
+    padding: 30px 0;
+    letter-spacing: 3px;
+    line-height: 1.2; 
+}
+
+
+/*なんかこのh2をいじると動かなくなる原因は不明*/
+h2 {
+  font-family: "游ゴシック Medium";
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+    
+    
+/*activity start*/
+
+/*#activity{*/
+    background-image: url(../images/bg-activity.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: 100% auto;
+}
+
+.main-center{
+    width: 97%;
+    margin: 0 auto;
+}
+
+#activity #warp{
+     margin: 0 5%;
+}
+
+.rotate {
+    float: right;
+    transform: rotate(90deg) translateX(100px) translateY(100px);
+    font-size: 3rem;
+    font-family: 'Staatliches', sans-serif; 
+}
+
+#activity h1 span{
+    font-size: 7rem;
+    margin-bottom: 0px;
+    margin-top: 2rem;
+/*    margin: auto 2%;*/
+}
+
+#activity h1{
+    font-size: 3.5rem;
+    margin-bottom: 0px;
+    margin: auto 5%;
+    line-height: normal;
+}
+
+#activity h1::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 4px;
+    background-color: #000000;
+}
+
+#activity h2::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 4px;
+    background-color: #000000;
+    margin-top: 2rem;
+}
+
+#activity h2{
+    font-weight: normal;
+    padding-bottom: 100px;
+    margin: auto 5%;
+    line-height: normal;
+    font-size: 0.6rem;
+}
+
+#activity h3{
+    font-size: 1.2rem;
+}
+
+.icon:before{
+    content: "";
+    padding-right: 10px;
+    border-left: 7px solid #6EE1D2;
+}
+
+/*なんかこいつをいじると動かなくなる原因は不明*/
+#activity .explanation-txt{     
+    width: 100%;
+/*    float: right;*/
+    margin-top: 30px;
+/*    margin-right: 10%;*/
+}
+
+#activity .explanation-txt p{
+    font-size: 0.8rem;
+}
+
+#activity .explanation-image {
+    float: left;
+    width: 100%;
+}
+
+#activity .clubimage{
+    float: left;
+    margin-left: 10%;
+    margin-top: 10rem;
+}
+
+
+
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#activity .explanation{
+    padding-bottom: 40px;
+}
+/*activity finish*/
+
+/*idを変えることがめんどくさかったのでこのままclubをスタート*/
+#activity .example-college{
+    margin-top: 5rem;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+#activity .example-college h4{
+    font-size: 2rem;
+}
+
+#activity .example-college img{
+    width: 23%;
+    padding-right: 1%;
+    padding-bottom: 1rem;
+}
+
+/*#activity .example-college img:nth-child(4n){*/
+    padding-right: 0%;
+}
+
+#activity .about-link {
+    margin-left: 10%;
+}
+/*club終わり*/
+
+/*shhabout start*/
+#shhabout #warp{
+    margin: 0 5%;
+}
+
+#shhabout h1 span{
+    font-size: 7rem;
+    margin-bottom: 0px;
+    margin-top: 2rem;
+}
+
+#shhabout h1{
+    font-size: 3.5rem;
+    margin-bottom: 0px;
+    margin: auto 5%;
+    line-height: normal;
+}
+
+#shhabout h1::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 4px;
+    background-color: #000000;
+}
+
+#shhabout h2::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 4px;
+    background-color: #000000;
+    margin-top: 2rem;
+}
+
+#shhabout h2{
+    font-weight: normal;
+    padding-bottom: 100px;
+    margin: auto 5%;
+    line-height: normal;
+    font-size: 1.8rem;
+}
+
+#shhabout h3{
+    font-size: 1.2rem;
+}
+
+.icon:before{
+    content: "";
+    padding-right: 10px;
+    border-left: 7px solid #6EE1D2;
+}
+
+/*なんかこいつをいじると動かなくなる原因は不明*/
+#shhabout .explanation-txt{     
+/*    width: 100%;*/
+    float: right;
+    margin-top: 5rem;
+}
+
+#shhabout .explanation-txt p{
+    font-size: 1rem;
+}
+
+#shhabout .explanation-txt .txt3 .shhabout{
+    margin-left: 10%;
+}
+
+#shhabout .explanation-txt2{
+/*    width: 42%;*/
+    float: right;
+    margin-top: 0;
+}
+
+#shhabout .explanation-txt2 p{
+font-size: 1rem;
+}
+
+#shhabout .explanation-image {
+    float: left;
+    width: 100%;
+}
+
+
+#shhabout .explanation{
+    padding-bottom: 40px;
+}
+
+/*shhabout finish*/
+
+/*neeting start*/
+#meeting #warp{
+    margin: 0 5%;
+}
+
+#meeting h1 span{
+    font-size: 7rem;
+    margin-bottom: 0px;
+    margin-top: 2rem;
+     font-family: 'Staatliches', sans-serif; 
+}
+
+#meeting h1{
+    font-size: 3.5rem;
+    margin-bottom: 0px;
+    margin: auto 5%;
+    line-height: normal;
+    letter-spacing: -0.05rem;
+}
+
+#meeting h1::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 4px;
+    background-color: #000000;
+}
+
+#meeting h2::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 4px;
+    background-color: #000000;
+    margin-top: 2rem;
+}
+
+#meeting h2{
+    font-weight: normal;
+    padding-bottom: 100px;
+    margin: auto 5%;
+    line-height: normal;
+    font-size: 1.8rem;
+}
+
+#meeting h3{
+    font-size: 1.2rem;
+}
+
+.icon:before{
+    content: "";
+    padding-right: 10px;
+    border-left: 7px solid #6EE1D2;
+}
+
+/*なんかこいつをいじると動かなくなる原因は不明*/
+#meeting .explanation-txt{     
+/*    width: 42%;*/
+    float: right;
+    margin-top: 5rem;
+    font-size: 4rem;
+}
+
+#meeting .explanation-txt .txt3 .shhabout{
+    margin-left: 10%;
+    font-size: 5rem;
+}
+
+#meeting .explanation-txt p{
+    font-size: 1rem;
+}
+
+#meeting .explanation-txt2{
+/*    width: 42%;*/
+    float: right;
+    margin-top: 5rem;
+    font-size: 3rem;
+}
+
+#meeting .explanation-txt2 p{
+    font-size: 1rem;
+}
+
+#meeting .explanation-image {
+    float: left;
+    width: 100%;
+}
+
+
+#meeting .explanation{
+    padding-bottom: 40px;
+}
+
+/*meeting finish*/
+
+/*about start*/
+
+#about #warp{
+    margin: 0px 5%;
+}
+
+#about h1{
+    font-family:"HGP創英角ゴシックUB";
+    font-size: 4.5rem;
+    letter-spacing: -0.05em;
+/*    transform: scaleY(1.2);*/
+    line-height: 0.9;
+    margin-bottom: 0;
+/*    font-weight: 600;*/
+}
+
+#about h1 span{
+    font-size: 7rem;
+    font-family: 'Staatliches', sans-serif; 
+    letter-spacing: normal;
+    transform: scaleY(1);
+    line-height: normal;
+    
+}
+
+#about h2{
+    font-family: "游ゴシック";
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    line-height: 1.3;
+/*    font-weight: 600;*/
+}
+
+/*線*/
+#about h2::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #000000;
+    width: 100px;
+    height: 3px;
+    transform: translateY(8px);
+}
+
+#about .top{
+    background-image: url(../images/about-top.png);
+    background-repeat: repeat-y;
+    background-position: center right;
+    height: 23rem;
+    
+    
+}
+
+#about h3{
+    font-size: 5rem;
+    transform: scaleY(1.5);
+    letter-spacing: -0.05em;
+    margin-bottom: 0;
+}
+
+#about h4{
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-top: 0;
+}
+
+#about .explanation-txt p{
+    margin: 5%;
+    font-size: 2rem;
+}
+
+#about .explanation-txt{
+    margin-top: 3em;
+    border: 3px solid;
+    display: inline-block;
+    width: 100%;
+    height: 80rem;
+    float: left;
+}
+
+#about .img{
+    width: 48%;
+    float: left;
+}
+
+#about .img02{
+    width: 48%;
+    float: left;
+}
+
+#about .explanation-txt2{
+    float: right;
+    border: 3px solid;
+    display: inline-block;
+    width: 100%;
+    height:80rem;
+    margin-top: 3em;
+}
+
+#about .explanation-txt2 p{
+margin: 5%;
+    font-size: 2rem;
+}
+
+#about .box{
+    color: #ffffff;
+    background-color: #000000;
+    width: 40%;
+    padding: 4% 2% 10% 2%;
+}
+
+#about .box h4::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    width: 4%;
+    height: 3px;
+    transform: translateY(50px);
+}
+
+
+
+/*about02 start*/
+#about02 #warp{
+    margin: 0px 5%;
+}
+
+#about02 h1{
+    font-family:"HGP創英角ゴシックUB";
+    font-size: 4rem;
+    letter-spacing: -0.05em;
+/*    transform: scaleY(1.2);*/
+    line-height: 0.9;
+    margin-bottom: 0;
+}
+
+#about02 h1 span{
+    font-size: 6rem;
+    font-family: 'Staatliches', sans-serif; 
+    letter-spacing: normal;
+/*    transform: scaleY(1);*/
+    line-height: normal;
+}
+
+#about02 h2{
+    font-family: "游ゴシック";
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    line-height: 1.3;
+/*    font-weight: 600;*/
+}
+
+/*線*/
+#about02 h2::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #000000;
+    width: 100px;
+    height: 3px;
+    transform: translateY(8px);
+}
+
+#about02 .top{
+    background-image: url(../images/about02-top.png);
+    background-repeat: repeat-y;
+    background-position: center right;
+    height: 23rem;
+    
+}
+
+#about02 h3{
+    font-size: 5rem;
+    transform: scaleY(1.5);
+    letter-spacing: -0.05em;
+    margin-bottom: 0;
+}
+
+#about02 h4{
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-top: 0;
+}
+
+#about02 .explanation-txt p{
+    margin: 5%;
+    font-size: 2rem;
+}
+
+#about02 .explanation-txt{
+    margin-top: 3em;
+    border: 3px solid;
+    display: inline-block;
+    width: 100%;
+    height: 80rem;
+    float: left;
+}
+
+#about02 .img{
+    width: 48%;
+    float: left;
+}
+
+#about02 .img02{
+    width: 48%;
+    float: left;
+}
+
+#about02 .explanation-txt2{
+    float: right;
+    border: 3px solid;
+    display: inline-block;
+    width: 100%;
+    height:80rem;
+    margin-top: 3em;
+}
+
+#about02 .explanation-txt2 p{
+margin: 5%;
+    font-size: 2rem;
+}
+
+#about02 .box{
+    color: #ffffff;
+    background-color: #000000;
+    width: 40%;
+    padding: 4% 2% 10% 2%;
+}
+
+#about02 .box h4::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    width: 4%;
+    height: 3px;
+    transform: translateY(50px);
+}
+
+/*about02 finish*/
+
+.img{
+    float: right;
+    margin-top: 3em;
+    width: 40%;
+    
+}
+
+.img img{
+    width: 100%;
+    height: 30rem;
+}
+
+.img02{
+    float: left;
+    margin-top: 3em;
+    width: 40%;
+}
+
+.img02 img{
+    width: 100%;
+    height: 30rem;
+}
+
+.view{
+    float: right;
+    margin-top: 5rem;
+    margin-right: 5%;
+    font-size: 1.1rem;
+}
+
+#about .view{
+    float: right;
+    margin-top: 20rem;
+    margin-right: 5%;
+    font-size: 1.1rem;
+    width: 45%;
+}
+
+#about .view02{
+    float: right;
+    margin-top: 20rem;
+    margin-right: 5%;
+    font-size: 1.1rem;
+    width: 45%;
+}
+
+#about02 .view{
+    float: right;
+    margin-top: 20rem;
+    margin-right: 5%;
+    font-size: 1.1rem;
+    width: 45%;
+}
+
+#about02 .view02{
+    float: right;
+    margin-top: 20rem;
+    margin-right: 5%;
+    font-size: 1.1rem;
+    width: 45%;
+}
+
+#about03 .view{
+    float: right;
+    margin-top: 20rem;
+    margin-right: 5%;
+    font-size: 1.1rem;
+    width: 45%;
+}
+
+#about03 .view02{
+    float: right;
+    margin-top: 20rem;
+    margin-right: 5%;
+    font-size: 1.1rem;
+    width: 45%;
+}
+
+.viewmore{
+    border-bottom: 4px solid #000000;
+    display: inline-block;
+    font-size: 2rem;
+}
+
+.view span{
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 2rem;
+    display: block;
+    width: 450px;
+    height: 100px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+}
+
+/*participation start*/
+#about03 #warp{
+    margin: 0px 5%;
+}
+
+#about03 h1{
+    font-family:"HGP創英角ゴシックUB";
+    font-size: 4rem;
+    letter-spacing: 0.05em;
+/*    transform: scaleY(1.2);*/
+    line-height: 0.9;
+    margin-bottom: 0;
+}
+
+#about03 h1 span{
+    font-size: 6rem;
+    font-family: 'Staatliches', sans-serif; 
+    letter-spacing: normal;
+/*    transform: scaleY(1);*/
+    line-height: normal;
+}
+
+#about03 h2{
+    font-family: "游ゴシック";
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    line-height: 1.3;
+/*    font-weight: 600;*/
+}
+
+/*線*/
+#about03 h2::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #000000;
+    width: 100px;
+    height: 3px;
+    transform: translateY(8px);
+}
+
+#about03 .top{
+    background-image: url(../images/about03-top.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    height: 23rem;
+}
+
+
+#about03 .point {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
+#about03 h3 span{
+    float: right;
+}
+
+#about03 h3{
+    width: 80%;
+    font-size: 10rem;
+    line-height: 1;
+    font-family:"HGP創英角ゴシックUB";
+}
+ 
+/*#about03 .explanation-txt{     */
+    width: 45%;
+    float: right;
+    margin-top: 30px;
+    font-size: 5rem;
+}
+
+#about03 #warp .content .main-center .explanation .explanation-txt p{
+    font-size: 1rem;
+}
+
+#about03 .explanation-txt3{     
+    width: 100%;
+/*    float: right;*/
+    margin-top: 30px;
+    font-size: 5rem;
+}
+
+#about03 .explanation-txt3::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #000000;
+    width: 10%;
+    height: 3px;
+    right: 10%;
+}
+
+#about03 .explanation-image {
+/*    float: left;*/
+    width: 100%;
+    padding-top: 3rem;
+/*    height: 45%;*/
+}
+
+/*#about03 .img2::after{*/
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #000000;
+    width: 8%;
+    height: 3px;
+    transform: translateY(3rem);
+}
+
+
+#about03 .explanation{
+    padding-bottom: 40px;
+    padding-top: 3rem;
+}
+
+#about03 .arrow{
+    width: 100%;
+}
+
+#about03 .point1{
+    font-size: 2rem;
+}
+
+/*線*/
+#about03 .point1::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #000000;
+    width: 12%;
+    height: 6px;
+    transform: translateY(8px);
+}
+
+#about03 .point2{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#about03 .question{
+    width: 70%;
+    height: 32rem;
+    background-color: #3CE1DA;
+    border-bottom: 0.5rem solid #3CE1DA;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 5rem;
+    margin-left: 15%;
+}
+
+
+#about03 .quest1{
+    font-family:"HGP創英角ゴシックUB";
+    
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 0;
+}
+
+#about03 .quest2{
+    background-color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 0rem 1rem;
+    line-height: 1.1;
+    font-size: 1.5rem;
+}
+
+#about03 .question:nth-child(3n){
+    margin-right: 0%;
+}
+
+#about03 .about03link{
+    color: #3CE1DA;
+    font-size: 3rem;
+    font-family: 'Staatliches', sans-serif;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#about03 .link-img2{
+   vertical-align: middle;
+    width: 10%;
+    height: 10%;
+}
+
+#about03 .about3like{
+    width: 30%;
+    margin-right: 1.5%;
+    margin-bottom: 5rem;
+}
+
+#about03 .about3like:nth-of-type(3n){
+    margin-right: 0%;
+}
+
+/*link start*/
+#links #warp{
+    margin: 0px 5%;
+}
+
+#links h1{
+    font-family:"HGP創英角ゴシックUB";
+    font-size: 4rem;
+    letter-spacing: -0.05em;
+/*    transform: scaleY(1.2);*/
+    line-height: 0.9;
+    margin-bottom: 0;
+}
+
+#links h1 span{
+    font-size: 6rem;
+    font-family: 'Staatliches', sans-serif; 
+    letter-spacing: normal;
+/*    transform: scaleY(1);*/
+    line-height: normal;
+}
+
+#links h2{
+    font-family: "游ゴシック";
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    line-height: 1.3;
+/*    font-weight: 600;*/
+}
+
+/*線*/
+#links h2::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #000000;
+    width: 100px;
+    height: 3px;
+    transform: translateY(8px);
+}
+
+#links .top{
+    background-image: url(../images/links-top.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    height: 23rem; 
+}
+
+#links .headline{
+    font-size: 12rem;
+    font-family: 'Staatliches', cursive;
+    color: #ffffff;
+    text-shadow: 2px 2px 0 #000,
+                -2px 2px 0 #000,
+                2px -2px 0 #000,
+                -2px -2px 0 #000;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: normal;
+}
+
+#links .linkinfo{
+    margin-top: 5rem;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 0:
+}
+
+#links .box-top{
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 7%;
+    margin-bottom: 0;
+    font-size: 1.8rem;
+}
+
+#links .box{
+/*    margin-right: 11%;*/
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+/*    float: left;*/
+    height: 30rem;
+    margin-bottom: 2rem;
+}
+
+#links .box-bottom{
+    text-align-last: center;
+    padding: 1% 3%;
+    background-color: #3CE1DA;
+    margin-top: 0;
+    font-family: 'Staatliches', cursive;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+#links .box a:hover{
+    text-decoration: none;
+}
+
+#links .box-bottom span{
+    font-family: 'Cairo', sans-serif;
+    color: #3ce1da;
+    text-shadow: 2px 2px 0 #fff,
+                -2px 2px 0 #fff,
+                2px -2px 0 #fff,
+                -2px -2px 0 #fff;
+}
+
+
+
+#links .benron{
+/*    width: 60%;*/
+    margin: 4rem auto;
+}
+
+#links .benron-info{
+    color: #ffffff;
+    background-color: #3ce1da;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#links .another-info{
+    list-style: none;
+    padding: 1rem;
+    border: medium solid #3ce1da;
+    font-size: 0.55rem;
+}
+
+/*links finish*/
+
+    
+/*top start*/
+
+.toppage p{
+    padding-top: 15rem;
+    margin-bottom: 1rem;
+    margin-left: 3%;
+    font-size: 7rem;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+#top  .toppage h5{
+    font-size: 1rem;
+    margin-left: 3%;
+    font-weight: bolder;
+}
+
+.toppage p span{
+    font-size: 9rem;
+}
+
+
+
+#top .toppage{
+    background-image: url(../images/toppage.png);
+    background-repeat: no-repeat;
+    background-size: 80% auto;
+    background-position: right;
+    padding-bottom: 2rem;
+}
+
+/*first*/
+
+#top .about{
+    margin: 0px 5% 5rem 5%;
+}
+
+#top .headline p span{
+    font-family: 'Oswald', sans-serif;
+/*    font-family: 'Staatliches', cursive;*/
+    font-size: 7rem;
+    padding-bottom: 0;
+}
+
+#top .headline p{
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+#top .headline p::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    width: 4%;
+    height: 3px;
+    transform: translateY(30px);
+}
+
+#top .headline{
+    width: 45%;
+    background-color: #000;
+    padding-bottom: 4rem;
+    padding-left: 1rem;
+    float: left;
+    height: 26rem;
+}
+
+#top .headimg{
+    width: 45%;
+    float: right;
+    height: 30rem;
+}
+
+#top .about-right{
+    margin-top: 2rem;
+    width: 100%;
+    float: right;
+    border: 3px solid #000;
+    padding-top: 2rem;
+}
+
+#top .about-right p{
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    float: right;
+}
+
+
+
+/*#top .about-right .backtext{*/
+    display: inline;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.4em;
+    padding: 5px;
+    background: linear-gradient(transparent 0%, #000 0%);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+    
+#top .about .viewtop{
+    width: 50%;
+    margin-top: 0;
+}
+
+#top .viewtop p{
+/*    width: 70%;*/
+    font-family: 'Staatliches', sans-serif; 
+     font-size: 5rem;
+     display: inline-block;
+/*    float: right;*/
+    margin-bottom: 0;
+    margin-top: 2rem;
+/*     padding-bottom: 0px;*/
+}
+
+#top .view-list{
+    width: 100%;
+    float: right;
+}
+
+#top .view-list li{
+    list-style: none;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1.5rem;
+/*    display: block;*/
+    line-height:  0.8rem;
+    width: 30%;
+/*    height: 10rem;*/
+/*    text-align:justify;*/
+    line-height: 2rem;
+    margin-right: 3%;
+    float: left;
+    padding-top: 0;
+}
+
+#top .view-list li span{
+/*   float: left;*/
+/* margin-top: 0;*/
+}
+
+#top .viewtop .view-list .view-img{
+    width: 20%;
+    margin: 1.2rem;
+    float: left;
+    margin-top: 3.5rem;
+}
+
+/*second*/
+
+#top .about2{
+    margin: 15rem 5% 5rem 5%;
+}
+#top .headline2 p span{
+   font-family: 'Oswald', sans-serif;
+/*    font-family: 'Staatliches', cursive;*/
+    font-size: 7rem;
+    padding-bottom: 0;
+}
+
+#top .headline2 p{
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+#top .headline2 p::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    width: 4%;
+    height: 3px;
+    transform: translateY(30px);
+}
+
+#top .headline2{
+    width: 45%;
+    background-color: #000;
+    padding-bottom: 4rem;
+    padding-left: 1rem;
+    float: right;
+    height: 26rem;
+}
+
+#top .about-right2{
+    margin-top: 2rem;
+    width: 100%;
+    float: left;
+    border: 3px solid #000;
+    padding-top: 2rem;
+}
+
+#top .about-right2 p{
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    float: left;
+}
+
+#top .about2 img{
+    float: left;
+    height: 30rem;
+}
+
+/*#top .about-right .backtext{*/
+    display: inline;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.4em;
+    padding: 5px;
+    background: linear-gradient(transparent 0%, #000 0%);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+    
+#top .about2 .viewtop2{
+    width: 50%;
+    margin-top: 0;
+}
+
+#top .view-list2{
+    width: 100%;
+    float: left;
+}
+
+#top .view-list2 li{
+    list-style: none;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1.5rem;
+/*    display: block;*/
+    line-height:  0.8rem;
+    width: 30%;
+/*    height: 10rem;*/
+/*    text-align:justify;*/
+    line-height: 2rem;
+    margin-right: 3%;
+    float: left;
+    padding-top: 0;
+}
+
+#top .view-list2 li span{
+   float: left;
+    margin-top: 0;
+}
+
+#top .viewtop2 .view-list2 .view-img2{
+    width: 20%;
+    margin: 1.2rem;
+    float: left;
+    height: auto;
+}
+#top .viewtop2 p{
+    width: 70%;
+    font-family: 'Staatliches', sans-serif; 
+     font-size: 5rem;
+     display: inline-block;
+/*    float: left;*/
+    margin-bottom: 0;
+    margin-top: 2rem;
+/*     padding-bottom: 0px;*/
+}
+
+#top .contents{
+    margin: auto 5%;
+}
+
+#top .table{
+    width: 100%;
+    float: left;
+    margin-right: 10%;
+}
+
+#top .table:nth-of-type(2n){
+    margin-right: 0;
+}
+
+
+
+#top .table .text{
+    float: left;
+    margin-top: 0;
+}
+
+
+
+#top .table h3{
+    font-family: 'Staatliches', sans-serif; 
+    font-size: 15rem;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    padding-bottom: 0;
+}
+
+#top .table p{
+    margin-top: 0;
+    font-size: 4rem;
+    line-height: normal;
+    margin-bottom: 0;
+    font-weight: bolder;
+}
+
+#top .table h5{
+    
+    margin-top: 0;
+    font-size: 2rem;
+    line-height: 1;
+/*    letter-spacing: 0.7em;*/
+}
+
+#top .table h5::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 3%;
+    height: 4px;
+    background-color: #000000;
+    margin-top: 2rem;
+}
+
+#top .table img{
+    float: right;
+    margin-top: 6rem;
+    width: 60%;
+}
+
+#top .table .text{
+    float: left;
+    margin-top: 0;
+}
+
+
+
+
+    
+/*top finish*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
